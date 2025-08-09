@@ -130,7 +130,7 @@
 	radiate()
 	return ..()
 
-/turf/closed/wall/mineral/uranium/attackby(obj/item/W, mob/user, params)
+/turf/closed/wall/mineral/uranium/attackby(obj/item/W, mob/user, list/modifiers)
 	radiate()
 	return ..()
 
@@ -197,7 +197,7 @@
 	icon_state = "bamboo_wall-0"
 	base_icon_state = "bamboo_wall"
 	smoothing_flags = SMOOTH_BITMASK
-	smoothing_groups = SMOOTH_GROUP_WALLS + SMOOTH_GROUP_BAMBOO_WALLS + SMOOTH_GROUP_CLOSED_TURFS
+	smoothing_groups = SMOOTH_GROUP_BAMBOO_WALLS + SMOOTH_GROUP_WALLS + SMOOTH_GROUP_CLOSED_TURFS
 	canSmoothWith = SMOOTH_GROUP_BAMBOO_WALLS
 	sheet_type = /obj/item/stack/sheet/mineral/bamboo
 	hardness = 80 //it's not a mineral...
